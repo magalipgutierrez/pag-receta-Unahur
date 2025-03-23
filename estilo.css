@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0.98;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navegador estilos*/
+.navbar {
+    background-color: #0693e3;
+    padding: 1rem;
+    color: white;
+}
+
+.navbar-unahur {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #939090;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-logo {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.navbar-brand {
+    font-size: 1.5rem; /* Aumentar el tamaño de la etiqueta <a> */
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #57a72d;
+    background-color: white;
+}
+/*texto de bievenida*/
+.bienvenida{
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.texto-bienvenida{
+    padding: 2vw;
+    width: 50%;
+}
+.video-presentacion{
+    padding: 2vw;
+    width: 50%;
+    
+}
+/*carrusel*/
+img.img-carrusell {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+
+/* Section estilos */
+.info, .login, .testimonials {
+    margin-top: 2rem;
+}
+.testimonial{
+    font-style: italic;
+}
+.info {
+    flex: 3;
+}
+
+.login {
+    flex: 1;
+    background: #57a72d;
+    padding: 1rem;
+    border-radius: 5px;
+    color:#fff;
+    width: 70%;
+}
+
+.login h2 {
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-puntaje{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.form-puntaje input[type="radio"],
+.form-puntaje label {
+    width: auto; /* dejo en auto*/
+}
+
+button, select {
+    text-transform: none;
+    background: #57a72d;
+    color: #fff;
+    border: none;
+    /* border-radius: 12%; */
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    min-width: auto;
+}
+
+form button, .button-volver {
+   
+    background: #0693e3;
+    color: #fff;
+    border: none;
+    border-radius: 12%;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: auto;
+}
+a.volver{
+    text-decoration: none;
+    color: #fff;
+}
+
+form button, .button-volver:hover {
+    background: #0056b3;
+}
+
+#loginMessage {
+    color: white;
+    margin-top: 1rem;
+}
+
+/* Galeria de imagenes estilo */
+.gallery {
+    margin-top: 2rem;
+}
+
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.grid-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer estilo */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Testimonial estilo */
+.testimonials {
+    background: #f0f0f0;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.testimonial {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #007bff;
+    background: #fff;
+}
+
+.testimonial p {
+    margin: 0;
+}
+
+.card-img {
+    flex-direction: column;
+    padding: auto;
+    flex-direction: column;
+    padding: auto;
+    width: 60%; /* Reduce el tamaño de las imágenes en las tarjetas */
+   /* max-width: 150px;  Limita el tamaño máximo de las imágenes */
+}
+
+.btn{
+   
+ color: #333;
+ border: none;
+ min-width: auto;
+        
+}
+.btn:hover {
+    color: #fff;
+    background-color: #0056b3;
+}
+
+/* Form upload estilo */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-form .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.upload-form input,
+.upload-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0;
+    }   
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+        margin-bottom: 0.5rem;
+        font-size: large;
+        font-family: initial;
+        font-weight: bold;
+    }
+    .bienvenida{
+        flex-direction: column;
+    }
+    .video-presentacion, .texto-bienvenida{
+        width: 100%;
+    }
+    .info, .login {
+        margin-top: 1rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+   
+}
+
+@media (min-width: 769px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .navbar-nav {
+        
+        font-size: large;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .puntaje .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+         padding: 1rem;
+         color: #333;
+        background: #f8f8f8;
+        border-radius: 5px;
+    }
+
+    .puntaje .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: auto;
+        flex: 1 2 auto;
+    }
+    .puntaje .card-body .btn {
+        background-color: #57a72d;
+        color: #fff;
+        border: none;
+        border-radius: 12%;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+    }
+    
+    .puntaje .card-body .btn:hover {
+        background-color: #0056b3;
+    }
+   
+    
+    .card-title {
+        color: #0693e3;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .card-text {
+        color: #333;
+        font-size: 1rem;
+    }
+    
+    .card-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+}

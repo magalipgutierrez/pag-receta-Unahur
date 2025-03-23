@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Gastronómico Unahur</title>
+    <!-- css -->
+    <link rel="stylesheet" href="estilo.css">
+    <!-- BOOTSTRAP -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- js -->
+    <script src="js/scripts.js" defer></script>
+
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- Menú principal -->
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-logo">
+                        <a class="navbar-unahur" href="https://campus.unahur.edu.ar/">Unahur</a>
+                        <img src="img/logo-unahur.png" alt="Logo de la Universidad UNAHUR" style="width: 10%;">
+                    </div>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item "><a class="nav-link" href="admin.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Recetas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="container">
+
+            <section class="info">
+                <div class="bienvenida">
+                    <div class="texto-bienvenida">
+                        <h1>Bienvenidos al Centro Gastronómico Unahur</h1>
+                        <p>El Centro Gastronómico Unahur es una institución líder en la formación de profesionales en el
+                            arte culinario. Nuestra misión es proporcionar una educación de alta calidad que permita a
+                            nuestros estudiantes desarrollar habilidades excepcionales en la cocina y la gestión
+                            gastronómica.</p>
+                    </div>
+                    <div class="video-presentacion">
+                        <video src="video/RECETAS.mp4" controls autoplay muted loop width="100%"></video>
+                    </div>
+                </div>
+                <div>
+                    <h2>Sobre Nosotros</h2>
+                    <p>Desde nuestra fundación en 2010, hemos sido pioneros en la enseñanza de técnicas culinarias
+                        avanzadas, fomentando la creatividad y la innovación en cada uno de nuestros cursos. Contamos
+                        con un equipo de chefs reconocidos y expertos en la industria gastronómica, dedicados a formar
+                        la próxima generación de líderes culinarios.</p>
+
+                    <h2>Nuestros Cursos</h2>
+                    <ul>
+                        <li><b>Curso de Cocina Básica:</b> Ideal para quienes desean iniciar su carrera culinaria.</li>
+                        <li><b>Curso de Cocina Internacional:</b> Explora las técnicas y sabores de diferentes culturas.
+                        </li>
+                        <li><b>Curso de Pastelería y Repostería:</b> Aprende a crear deliciosos postres y panes.</li>
+                        <li><b>Curso de Gestión Gastronómica:</b> Prepárate para liderar y gestionar tu propio negocio
+                            gastronómico.</li>
+                    </ul>
+
+                    <h2>Testimonios</h2>
+                    <div class="testimonial">
+                        <p>"Estudiar en Unahur ha sido una experiencia increíble. Los profesores del centro son muy
+                            capacitados y siempre están dispuestos a ayudar." - Ana Gómez</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Gracias a Unahur, he podido experimentar re-crear comidas y poner en práctica todo lo
+                            aprendido. ¡Altamente recomendadas sus recetas!" - Luis Martínez</p>
+                    </div>
+                </div>
+            </section>
+            <!-- CARRUSEL DE IMAGENES -->
+            <div class="container mt-5">
+                <h3>Encontrarás muchas recetas deliciosas para tu practica de cocina</h3>
+                <div class="slideshow-container">
+                    <div class="slide">
+                        <img src="img/img1.png" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/img2.png" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/img 3.png" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="img/img4.png" alt="Image 4">
+                    </div>
+
+                    <a id="prev-btn" class="prev">&#10094;</a>
+                    <a id="next-btn" class="next">&#10095;</a>
+                </div>
+            </div>
+            <!-- Zona de login -->
+            <aside class="login">
+                <h2>Iniciar sesión</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Usuario</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Clave</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit">Ingresar</button>
+                    <p id="loginMessage"></p>
+                </form>
+            </aside>
+        </main>
+
+        <!-- Grilla de imágenes recetas destacadas -->
+        <section class="gallery container">
+            <h2>Recetas Destacadas</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h4>Empanadas</h4>
+                    <img src="img/1.png" alt="Receta 1: empanadas de carne y champiñones">
+                    <h4>Calificación: ★★★★★</h4>
+                </div>
+                <div class="grid-item">
+                    <h4>Choripan</h4>
+                    <img src="img/2.png" alt="Receta 2: de chori argentino">
+                    <h4>Calificación: ★★★★★</h4>
+                </div>
+                <div class="grid-item">
+                    <h4>Pizzas caseras</h4>
+                    <img src="img/historia de instagram producto a la venta con fotografía de comida.png"
+                        alt="Receta 3: Ricas Pizzas gourmet">
+                    <h4>Calificación: ★★★★</h4>
+                </div>
+                <div class="grid-item">
+                    <h4>Pastas caseras</h4>
+                    <img src="img/PASTA.png" alt="Receta 4">
+                    <h4>Calificación: ★★★★</h4>
+                </div>
+            </div>
+            <button class="button-volver"><a class="volver" href="admin.html" class="boton">Subir</a></button>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="pie">
+            <p>© 2024 Magalí Paula Gutierrez - Comisión 2</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Gastronómico Unahur - Alumno</title>
+    <!-- css -->
+    <link rel="stylesheet" href="estilo.css">
+    <!-- js -->
+    <script src="js/scripts.js" defer></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Menú principal -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-unahur" href="https://campus.unahur.edu.ar/">Unahur</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="admin.html">Inicio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <h1 id="welcomeMessage"></h1>
+
+        <!-- Formulario para subir recetas -->
+        <section class="upload">
+            <h2>Subir Nueva Receta</h2>
+            <form class="upload-form">
+                <div class="form-group">
+                    <label for="recetaNombre">Nombre de la Receta</label>
+                    <input type="text" id="recetaNombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="recipeDescription">Descripción</label>
+                    <textarea id="recipeDescription" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="recipeImage">Imagen de la Receta</label>
+                    <input type="file" id="recipeImage" required>
+                </div>
+                <button type="submit">Subir Receta</button>
+            </form>
+        </section>
+
+        <!-- Sección para puntuar recetas -->
+        <section class="puntaje">
+            <h2>Puntuar Recetas</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Brochette de Carne Gourmet</h5>
+                    <p class="card-text">Un brochette de carne es un plato donde trozos de carne y vegetales se ensartan
+                        en palitos y se cocinan a la parrilla o al asador, ofreciendo una combinación sabrosa y jugosa
+                        de carne y vegetales.</p>
+                    <img class="card-img" src="img/img1.png" alt="Receta de las empanadas" width="70%">
+                    <p><b>Con cuántas estrellas puntuarías está receta?:</b></p>
+                    <form class="form-puntaje">
+                        <input id="cinco" type="radio" name="puntuar">
+                        <label for="cinco">★★★★★</label>
+                        <input id="cuatro" type="radio" name="puntuar">
+                        <label for="cuatro">★★★★</label>
+                        <input id="tres" type="radio" name="puntuar">
+                        <label for="tres">★★★</label>
+                        <input id="dos" type="radio" name="puntuar">
+                        <label for="dos">★★</label>
+                        <input id="uno" type="radio" name="puntuar">
+                        <label for="uno">★</label><br>
+                    </form>
+                    <button class="btn">Puntuar</button>
+                </div>
+                <div class="card-receta">
+                    <ul>
+                        <p><b>Ingredientes </b></p>
+                        <li>500 g de carne de res (puede ser filete, lomo o similar), cortada en cubos grandes</li>
+                        <li>1 pimiento rojo, cortado en trozos grandes</li>
+                        <li>1 pimiento verde, cortado en trozos grandes</li>
+                        <li>1 cebolla roja, cortada en trozos grandes</li>
+                        <li>8 champiñones grandes, limpios</li>
+                        <li>2 cucharadas de aceite de oliva</li>
+                        <li>Sal y pimienta al gusto</li>
+                        <li>3 dientes de ajo, picados</li>
+                        <li>1/4 taza de aceite de oliva</li>
+                        <li>2 cucharadas de vinagre balsámico</li>
+                        <li>1 cucharada de mostaza Dijon</li>
+                        <li>Sal y pimienta al gusto</li>
+                    </ul>
+                    
+                    <ol>
+                        <p><b>Instrucciones: </b></p>
+                        <li><b>Preparación de la marinada:</b>
+                            <p>En un tazón pequeño, mezcla el ajo picado, el aceite de oliva, el vinagre balsámico, la
+                                mostaza Dijon, la miel, la sal y la pimienta. Mezcla bien hasta que esté combinado.</p>
+                        </li>
+                        <li><b> Marinado de la carne:</b>
+                            <p>Coloca los cubos de carne en un recipiente hermético y vierte la marinada sobre la carne.
+                                Mezcla para asegurarte de que todos los trozos estén cubiertos con la marinada. Cubre el
+                                recipiente y refrigera durante al menos 1 hora (puedes dejarlo marinar hasta por 4 horas
+                                para obtener más sabor).</p>
+                        </li>
+                        <li> <b>Montaje de los brochettes:</b>
+                            <p>Precalienta la parrilla o el asador a temperatura media-alta.</p>
+                            <p>En los palitos de brochette alternadamente ensarta los cubos de carne marinada, los
+                                pimientos, las cebollas y los champiñones.</p>
+                        </li>
+                        <li> <b>Cocción:</b>
+                            <p>Unta ligeramente los brochettes con un poco de aceite de oliva y sazona con sal y
+                                pimienta.</p>
+                            <p>Coloca los brochettes en la parrilla caliente y cocina durante 10-12 minutos, volteando
+                                ocasionalmente, hasta que la carne esté cocida a tu gusto y los vegetales estén tiernos
+                                y ligeramente dorados.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+
+                    <h5 class="card-title">Brochette de Carne Gourmet</h5>
+                    <p class="card-text"> Su textura delicada y el sabor auténtico te transportarán a la cocina
+                        italiana, haciendo de cada bocado una experiencia gourmet inolvidable</p>
+
+                    <img class="card-img" src="img/img 3.png" alt="Segunda receta">
+                    <p><b>Con cuántas estrellas puntuarías está receta?:</b></p>
+                    <form class="form-puntaje">
+                        <input id="cinco" type="radio" name="puntuar">
+                        <label for="cinco">★★★★★</label>
+                        <input id="cuatro" type="radio" name="puntuar">
+                        <label for="cuatro">★★★★</label>
+                        <input id="tres" type="radio" name="puntuar">
+                        <label for="tres">★★★</label>
+                        <input id="dos" type="radio" name="puntuar">
+                        <label for="dos">★★</label>
+                        <input id="uno" type="radio" name="puntuar">
+                        <label for="uno">★</label><br>
+                    </form>
+                    <button class="btn">Puntuar</button>
+                </div>
+                <div class="card-receta">
+                    <ul>
+                        <p><b>Ingredientes </b></p>
+                        <li>300 g de harina de trigo</li>
+                        <li>3 huevos grandes</li>
+                        <li>1 cucharada de aceite de oliva</li>
+                        <li>Una pizca de sal</li>
+                    </ul>
+                    
+                    <ol>
+                        <p><b>Instrucciones: </b></p>
+                        <li><b>Preparación de la masa:</b>
+                            <p>En un bowl grande, forma un volcán con la harina y agrega los huevos en el centro.</p>
+                            <p>Agrega el aceite de oliva y la pizca de sal.</p>
+                            <p>Con un tenedor, comienza a mezclar los huevos y el aceite, incorporando gradualmente la
+                                harina desde los bordes hasta que todo esté bien combinado.</p>
+                        </li>
+                        <li><b>Amasado:</b>
+                            <p>Una vez que la masa comience a formarse, amasa sobre una superficie ligeramente
+                                enharinada durante unos 10-15 minutos, hasta que la masa esté suave y elástica. Si es
+                                necesario, agrega un poco más de harina para evitar que se pegue.</p>
+                        </li>
+                        <li><b>Descanso:</b>
+                            <p>Envuelve la masa en film transparente y deja reposar a temperatura ambiente durante al
+                                menos 30 minutos.</p>
+                        </li>
+                        <li><b>Estirado y corte:</b>
+                            <p>Divide la masa en porciones más pequeñas y estira cada porción con un rodillo hasta
+                                obtener una lámina fina (aproximadamente 1-2 mm de grosor).</p>
+                            <p>Con un cuchillo o una máquina de pasta, corta la masa en tiras largas de aproximadamente
+                                1 cm de ancho.</p>
+                        </li>
+                        <li><b>Cocción:</b>
+                            <p>Hierve abundante agua con sal en una olla grande.</p>
+                            <p>Cocina los fideos caseros durante 2-3 minutos, o hasta que estén al dente.</p>
+                            <p>Escurre bien y sirve inmediatamente con la salsa de tu elección, como una salsa de tomate
+                                casera, pesto, o aceite de oliva y ajo con hierbas frescas.</p>
+
+                        </li>
+                    </ol>
+                    <button class="btn">Ver más</button>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Magalí Paula Gutierrez - Comision 2</p>
+    </footer>
+</body>
+
+</html>
