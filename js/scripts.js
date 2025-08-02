@@ -14,13 +14,15 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     event.preventDefault();
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
-
+    var url= "alumno.html?usuario=" ;
     if (username === 'rodrigo' && password === '123') {
         
-         var url= "alumno.html?usuario=" + username;
-         window.location.href = url;
+         var urlUsuario= "alumno.html?usuario=" + username;
+         window.location.href = urlUsuario;
     } else {
-        document.getElementById('loginMessage').innerText = 'Usuario incorrecto, vuelve a intentarlo.';
+        //document.getElementById('loginMessage').innerText = 'Usuario usuario no especificado.';
+        
+         window.location.href = url;
     }
 });
 
